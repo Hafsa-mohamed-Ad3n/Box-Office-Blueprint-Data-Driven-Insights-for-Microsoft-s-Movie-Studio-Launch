@@ -159,6 +159,5 @@ Genre blending can enhance both appeal and quality. Creating Adventure-Fantasy o
 
 ![Average Popularity by Genre](Images/Average%20Popularity%20by%20Genre.png)
 ![Vote Average vs Genre Popularity](Images/Vote%20Average%20vs%20Genre%20Popularity.png)
-![Top 10 Genre Pairs by Audience Preference](Images/Top%2010%20Genre%20Pairs%20by%20Audience%20Preference.png)
-.
+![Top 10 Genre Pairs by Audience Preference](Images/Top%2010%20Genre%20Pairs%20by%20Audience%20Preference.png). 
 
