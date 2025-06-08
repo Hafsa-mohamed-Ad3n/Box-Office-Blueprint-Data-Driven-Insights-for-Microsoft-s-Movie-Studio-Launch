@@ -11,10 +11,11 @@ Phase 2 Project, Moringa Data Science Program
 - Rose Muthini
 
 ## Project Overview
-This project aims to guide the establishment of a new movie studio by providing actionable insights into the key factors driving box office success. We explore data from IMDB, The Movie Database (TMDb), and the numbers to understand what types of movies perform well at the box office. The goal is to extract patterns in genres, ratings, and other characteristics to guide the studio’s production strategy.
+This project aims to guide the establishment of a new movie studio by providing actionable insights into the key factors driving box office success. We explore data from IMDB, The Movie Database (TMDb), and the finaancial numbers to understand what types of movies perform well at the box office. The goal is to extract patterns in genres, ratings, and other characteristics to guide the studio’s production strategy.
+
 
 ## Business Problem
-The new movie studio lacks experience in filmmaking and needs insights to:
+The new movie studio lacks experience in movie making and needs insights to:
 - Identify successful movie characteristics.
 - Pinpoint profitable genres.
 - Determine optimal budget ranges.
@@ -25,106 +26,12 @@ The dataset used for this project combines information from multiple sources, ea
 
 ###  Data Sources and Datasets
 
-1. [Box Office Mojo](https://www.boxofficemojo.com/) - Provides detailed box office revenue information.
- - `bom.movie_gross.csv.gz` – Contains gross earnings for movies, including domestic and international revenue data.
-
-2. [IMDB (Internet Movie Database)](https://www.imdb.com/) - Database showing production details, cast/crew, and user ratings.
-   - `imdb.title.akas.csv.gz` – Includes international titles and alternative titles.
-   - `imdb.title.basics.csv.gz` – Contains basic information about films such as title, year, runtime, and genre.
-   - `imdb.title.crew.csv.gz` – Lists directors and writers of each film.
-   - `imdb.title.ratings.csv.gz` – Shows user ratings and number of votes.
-   - `imdb.title.principals.csv.gz` – Lists principal cast and crew including actors, actresses, producers, etc.
-   - `imdb.name.basics.csv.gz` – Provides basic information about people (e.g., birth year, profession).
-
-3. [The Movie Database (TMDb)](https://www.themoviedb.org/) - Movie database offering community sourced metadata.
-
-   - `tmdb.movies.csv.gz` – Contains metadata about movies including popularity, vote count, and language.
-
-4. [The Numbers](https://www.the-numbers.com/) - Shows financial data related to movies.
-
-   - `tn.movie_budgets.csv.gz` – Includes production budgets, worldwide gross, and calculated profits.
-
-5. [Rotten Tomatoes](https://www.rottentomatoes.com/) - Contains reviews was considered for sentiment and critic score references.
-
-
-###  Datasets Used in Analysis
-After performing an initial assessment, cleaning, and merging of data, we used the following datasets for analysis:
-
-- `tn.movie_budgets.csv.gz` → Used for financial and studio performance analysis (budget, gross, profit, ROI).
-- `bom.movie_gross.csv.gz` → Supplementary financial data, focusing on domestic and international gross.
-- `imdb.title.basics.csv.gz` → Used to extract genre, runtime, and title information.
-- `imdb.title.akas.csv.gz` & `imdb.title.principals.csv.gz` → Used to identify directors, actors, and producers for cast analysis.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Data source
-Below are the sources of the data :
-    -1. [IMDB](https://www.imdb.com/)
-    -2.  [Rotten Tomatoes](https://www.rottentomatoes.com/)
-    -3. [TheMovieDB](https://www.themoviedb.org/)
-    -4.  [The Numbers](https://www.the-numbers.com/)
-    -5. [Box Office Mojo](https://www.boxofficemojo.com/)
-
-
-
-
-
-
-
-
-
-
-
-
-
-1. Box Office Mojo:
-   - bom.movie_gross.csv.gz
-
-2. IMDB:
+1. [Box Office Mojo](https://www.boxofficemojo.com/) 
+Provides comprehensive box office earnings, including (domestic and international) revenue data.
+   - bom.movie_gross.csv.gz 
+
+2. [IMDB (Internet Movie Database)](https://www.imdb.com/) 
+Comprehensive movie database featuring production details, cast and crew (including directors, writers, actors, and producers), user ratings and votes, as well as metadata such as title, release year, runtime, genre, and biographical information.
    - imdb.title.crew.csv.gz
    - imdb.title.akas.csv.gz
    - imdb.title.ratings.csv.gz
@@ -132,15 +39,57 @@ Below are the sources of the data :
    - imdb.title.basics.csv.gz
    - imdb.title.principals.csv.gz
 
-3. TMDB:
+3. [The Movie Database (TMDb)](https://www.themoviedb.org/) 
+Collaborative movie database providing community sourced metadata such as popularity, vote count, and original language
    - tmdb.movies.csv.gz
 
-4. The Numbers:
+4. [The Numbers](https://www.the-numbers.com/) 
+Provides financial data on movies, including production budgets, worldwide gross, and estimated profits
    - tn.movie_budgets.csv.gz
 
-After initial analysis and some data cleaning, the datasets which we used for our analysis were:
 
-- a) tn.movie_budgets.csv.gz for financial & studio data
-- b) bom.movie_gross.csv.gz for financial data
-- c) imdb.title.basics.csv.gz for genre data
-- d) imdb.title.akas.csv.gz for Directors, Actors & Producers data
+###  Datasets Used in Analysis
+After performing an initial analysis, cleaning, and merging of data, we used the following datasets for analysis:
+
+- `tn.movie_budgets.csv.gz` → Used for financial and studio performance analysis (budget, gross, profit, ROI).
+- `bom.movie_gross.csv.gz` → Supplementary financial data, focusing on domestic and international gross.
+- `imdb.title.basics.csv.gz` → Used to extract genre, runtime, and title information.
+- `imdb.title.akas.csv.gz` & `imdb.title.principals.csv.gz` → Contains Movie Metadata like genre, runtimes, directors, actors, and producers for talent influence.
+
+
+### Data Preparation
+
+We performed basic data cleaning using Python, including converting data types where necessary, removing missing values that could significantly impact our analysis, and identifying potential outliers. New columns were added based on the needs of the analysis or the outcomes we wanted. We also carried out exploratory analysis to understand data distributions and spot anomalies early in the process. 
+To maximize the usefulness of the data, we merged datasets to enrich the information available allowing us to have a better understand of the business problem.
+
+## Exploratory Data Analysis (EDA)
+
+### Financial Performance Metric
+We analyzed over a century’s worth of movie data to evaluate key financial performance variables:
+- production budget
+- domestic gross
+- worldwide gross
+
+After cleaning the dataset, we calculate key profitability metrics such as profit and Return on Investment (ROI), enabling us to assess how efficiently movies converted budget into revenue.
+
+Key Insights:
+- Low to mid budget movies (under $50M) tend to have higher ROI, making them more profitable relative to cost and less financially risky.
+- High budget movies ($200M+), while capable of generating massive profits, show wide flactuations in returns, making them riskier investments for new studios.
+- The $50M–$200M budget range appears to be a strategic sweet spot, balancing strong profit potential with manageable risk.
+
+We also found out that domestic success is a strong predictor of international earnings, but a few movies succeed internationally despite poor local performance highlighting the importance of understanding global markets.
+
+Historically, movie investments were most efficient during the 1930s–1970s with significantly higher average ROI than in more recent decades. While modern ROI has stabilized, this insight could  offer valuable inspiration remakes or modern adaptations of older high-return models could be worth exploring.
+
+By analyzing profit trends across budget brackets, ROI distribution over time, and the relationship between budget and returns, our work offers clear, data-backed guidance for investors and stakeholders. 
+
+The insights help in shaping a cost-effective, market-aware production strategy aimed at long term  financial sustainability.
+
+#### Regression Modelling
+
+To test whether production budget could reliably predict ROI, we applied a simple linear regression model. The results showed that budget alone has almost no predictive power (R² = 0.0069). 
+Production budgets don’t account for other crucial factors like marketing, distribution cuts, and backend deals. For more accurate forecasting, we’d need more dataset that reflects the full financial lifecycle of a movie. Simply spending more on production doesn’t guarantee higher returns. 
+
+![Forecasting ROI from Production Budgets](Images/forecasting_roi_from_production_budgets.png)
+
+
