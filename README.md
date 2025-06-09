@@ -1,21 +1,25 @@
 
-![A collage of popular movies](Images\image-4.png)
+![A collage of popular movies](Images/image-4.png)
 
 # Box Office Blueprint: Data-Driven Insights for Microsoft's Movie Studio Launch
 
 ## Authors
-- Hafsa Mohamed Aden
-- Ryan Karimi
-- Elizabeth Ogutu
-- Rose Muthini
 
-<sub><i>This project was developed as part of the Phase 2 Project in the Moringa Data Science Program.</i></sub>
+- [Hafsa M.Aden](https://www.linkedin.com/in/hafsa-m-aden-330451223/)
+- Ryan Karimi
+- [Elizabeth Ogutu](https://www.linkedin.com/in/elizabeth-ogutu-36222b1a6/)
+- [Rose Muthini](https://www.linkedin.com/in/syomiti-muthini-03849a153/)
+
+
+<sub><i>Phase 2 Project, Moringa Data Science Program.</i></sub>
 
 ## Project Overview
 This project aims to guide the establishment of a new movie studio by providing actionable insights into the key factors driving box office success. We explore data from IMDB, The Movie Database (TMDb), and the finaancial numbers to understand what types of movies perform well at the box office. The goal is to extract patterns in genres, ratings, and other characteristics to guide the studio’s production strategy.
 
+## Project Collaboration
+We used [Notion](https://www.notion.so/Group-Project-Box-Office-Analysis-20adb8fbd6cf804cb0b6d1bf27be4ef2) to manage our project timeline, assign tasks, and track contributions. This helped ensure smooth coordination across the team.
 
-## Business Problem
+## Business Objectives
 The new movie studio lacks experience in movie making and needs insights to:
 - Identify successful movie characteristics.
 - Pinpoint profitable genres.
@@ -28,7 +32,7 @@ The dataset used for this project combines information from multiple sources, ea
 ###  Data Sources and Datasets
 
 1. [Box Office Mojo](https://www.boxofficemojo.com/) 
-Provides comprehensive box office earnings, including (domestic and international) revenue data.
+Provides comprehensive box office earnings of other studios including (domestic and international) revenue data.
    - bom.movie_gross.csv.gz 
 
 2. [IMDB (Internet Movie Database)](https://www.imdb.com/) 
@@ -115,21 +119,21 @@ For a detailed breakdown of the analysis, please refer to the full notebook: ![B
 
 ### Recomendation
 
-- Poduction budget alone does not reliably predict financial success. The studio should diversify investment and allocate resources strategically, factoring in marketing, distribution, and talent costs to maximize ROI.
+- Production budget alone does not reliably predict financial success. The studio should diversify investment and allocate resources strategically, factoring in marketing, distribution, and talent costs to maximize ROI.
 
-- Prioritize colloboration with directors, producers, and lead actors who have consistently demonstrated positive impact on movie performance to improve profitability and audience engagement.
+- Prioritize collaboration with directors, producers, and lead actors who have consistently demonstrated positive impact on movie performance to improve profitability and audience engagement.
  
 - Tailoring movie content to align with our audience preferences, while balancing creativity, will enhance market reception and box office returns.
 
 - Understanding seasonal trends and optimal runtimes can improve audience turnout and overall performance.  Strategic scheduling of releases is recommended.
  
-- Continuous market reserch is essential to stay ahead in a rapidly evolving industry by actively tracking top studios’ revenue patterns helps identify emerging trends and potential market gaps.
+- Continuous market research is essential to stay ahead in a rapidly evolving industry by actively tracking top studios’ revenue patterns helps identify emerging trends and potential market gaps.
 
 
 ## Conclusion
 
 Our analysis provides a foundational understanding to guide the launch of a new movie studio. However, there are some limitations and challenges to consider:
-- The dataset does not capture the full financial cycle such as marketing budgets and revenue splits with theaters. These missing variables are critical for developing a comprehensive financial picture.
+- The dataset does not capture the full financial cycle such as marketing budgets and revenue splits with theatres. These missing variables are critical for developing a comprehensive financial picture.
 - The rise of streaming platforms like Netflix, Amazon Prime, and Disney presents both challenges and opportunities, which are not fully reflected in the data. The new studio should explore hybrid release strategies to adapt to this evolving landscape.
 
 We encourage the stakeholders to expand their definition of success beyond traditional financial metrics like ROI and to include:
