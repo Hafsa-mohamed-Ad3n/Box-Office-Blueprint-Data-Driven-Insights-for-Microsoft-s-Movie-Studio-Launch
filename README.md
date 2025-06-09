@@ -155,7 +155,7 @@ We explored the trade-off between a movie’s popularity and how well it's recei
 For consistent critical success and family appeal, lean into Drama and Animation.
 
 
-Genre blending can enhance both appeal and quality. Creating Adventure-Fantasy or Sci-Fi crossovers may yield high engagement and satisfaction. Pairing Action with Thriller ensures wide marketability.
+Genre blending can enhance both appeal and quality. Creating Adventure-Fantasy or Sci-Fi crossovers may yield high engagement and satisfaction. Pairing Action with Thriller ensures wide marketability.. 
 
 ![Average Popularity by Genre](Images/Average%20Popularity%20by%20Genre.png)
 ![Vote Average vs Genre Popularity](Images/Vote%20Average%20vs%20Genre%20Popularity.png)
