@@ -101,7 +101,7 @@ We created an interactive Tableau dashboard to present the results of the analys
 
 
 
-[View the Presentation](https://public.tableau.com/app/profile/ryan.karimi1348/viz/Tableuaproject_17494898725590/Dashboard2?publish=yes)
+[View the Presentation](Presentation.pdf)
 
 
 ### Observation
