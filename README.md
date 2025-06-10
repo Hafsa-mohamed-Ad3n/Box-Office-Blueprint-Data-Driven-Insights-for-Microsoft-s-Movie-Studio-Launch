@@ -91,7 +91,8 @@ We explored ratings, genre trends, and runtime distributions to better understan
 #### e) Basic Movie Meta data for Strategic Decision Making
 Finally, we considered general movie attributes such as release year, language, and runtime to identify seasonal trends, optimal movie lengths, and how content success has evolved over time. These are critical for shaping release strategies and production planning.
 
-For a detailed breakdown of the analysis, please refer to the full notebook: [Box_Office.ipynb](Final merged file.ipynb)
+For a detailed breakdown of the analysis, please refer to the full notebook: [Box_Office.ipynb](Final%20merged%20file.ipynb)
+
 
 ## Key Findings & Results
 
