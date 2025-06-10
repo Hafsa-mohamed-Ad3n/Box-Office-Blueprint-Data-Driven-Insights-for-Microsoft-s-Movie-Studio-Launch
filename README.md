@@ -6,7 +6,7 @@
 ## Authors
 
 - [Hafsa M.Aden](https://www.linkedin.com/in/hafsa-m-aden-330451223/)
-- Ryan Karimi
+- [Ryan Karimi](https://www.linkedin.com/in/ryan-karimi-39a701326/)
 - [Elizabeth Ogutu](https://www.linkedin.com/in/elizabeth-ogutu-36222b1a6/)
 - [Rose Muthini](https://www.linkedin.com/in/syomiti-muthini-03849a153/)
 
@@ -71,32 +71,38 @@ To maximize the usefulness of the data, we merged datasets to enrich the informa
 ## Analysis Overview
 To address the business problem of helping a new movie studio with no prior movie making experience, we structured our analysis around these key pillars:
 
-### Financial Metric Performance
+#### a) Financial Metric Performance
 - We analyzed financial data to understand what makes a movie financially successful. Using production budget, gross earnings, and calculated metrics like profit and Return on investment (ROI), we identified patterns in profitability across diffrent budget ranges and time periods. This helped us determine cost effective production strategies and the financial risks involved in different investment levels.
 
 - We also applied regression model to quantify the impact of Production budget on financial outcomes like Return on investment(ROI). 
 
-#### Market Landscape
+#### b) Market Landscape
 To understand the industry dynamics, we conducted a competitive analysis of global box office trends to identify the top studios and examine their revenue patterns over time.
 
 
-#### Influence of Talent
+#### c) Influence of Talent
 We also looked at the impact of directors, producers, and lead actors on movie performance. By linking cast and crew data with box office returns, we checked whether specific individuals consistently drive higher profitability or audience engagement. This aims to support informed hiring decisions for the studio.
 
 
-#### Audience Preference
+#### d) Audience Preference
 We explored ratings, genre trends, and runtime distributions to better understand what types of content resonate most with audiences. By segmenting movies by genre, rating, and popularity metrics, we gained insight into audience preference. This enables the studio to tailor content to audience tastes while balancing creative goals and market viability.
 
 
-#### Basic Movie Meta data for Strategic Decision Making
+#### e) Basic Movie Meta data for Strategic Decision Making
 Finally, we considered general movie attributes such as release year, language, and runtime to identify seasonal trends, optimal movie lengths, and how content success has evolved over time. These are critical for shaping release strategies and production planning.
 
-For a detailed breakdown of the analysis, please refer to the full notebook: ![Box_Office.ipynb](Final merged file.ipynb)
+For a detailed breakdown of the analysis, please refer to the full notebook: [Box_Office.ipynb](Final%20merged%20file.ipynb)
+
 
 ## Key Findings & Results
 
+We created an interactive Tableau dashboard to present the results of the analysis in a clear and accessible way.
 
-### TABLEAU ¬ PRESENTTATION LINK (PDF)
+[View the tableau Dashboard](https://public.tableau.com/app/profile/ryan.karimi1348/viz/Tableuaproject_17494898725590/Dashboard2?publish=yes)
+
+
+
+[View the Presentation](Presentation.pdf)
 
 
 ### Observation
