@@ -6,7 +6,7 @@
 ## Authors
 
 - [Hafsa M.Aden](https://www.linkedin.com/in/hafsa-m-aden-330451223/)
-- Ryan Karimi
+- [Ryan Karimi](https://www.linkedin.com/in/ryan-karimi-39a701326/)
 - [Elizabeth Ogutu](https://www.linkedin.com/in/elizabeth-ogutu-36222b1a6/)
 - [Rose Muthini](https://www.linkedin.com/in/syomiti-muthini-03849a153/)
 
