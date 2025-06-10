@@ -1,2 +1,2 @@
-im.db
-
+#Ignore all ziped files
+*.xlsx
