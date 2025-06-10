@@ -1,21 +1,25 @@
 
-![A collage of popular movies](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*NPBh2prSO3USXoRA5CwaNg.png)
+![A collage of popular movies](Images/image-4.png)
 
 # Box Office Blueprint: Data-Driven Insights for Microsoft's Movie Studio Launch
 
 ## Authors
-- Hafsa Mohamed Aden
-- Ryan Karimi
-- Elizabeth Ogutu
-- Rose Muthini
 
-<sub><i>This project was developed as part of the Phase 2 Project in the Moringa Data Science Program.</i></sub>
+- [Hafsa M.Aden](https://www.linkedin.com/in/hafsa-m-aden-330451223/)
+- Ryan Karimi
+- [Elizabeth Ogutu](https://www.linkedin.com/in/elizabeth-ogutu-36222b1a6/)
+- [Rose Muthini](https://www.linkedin.com/in/syomiti-muthini-03849a153/)
+
+
+<sub><i>Phase 2 Project, Moringa Data Science Program.</i></sub>
 
 ## Project Overview
 This project aims to guide the establishment of a new movie studio by providing actionable insights into the key factors driving box office success. We explore data from IMDB, The Movie Database (TMDb), and the finaancial numbers to understand what types of movies perform well at the box office. The goal is to extract patterns in genres, ratings, and other characteristics to guide the studio’s production strategy.
 
+## Project Collaboration
+We used [Notion](https://www.notion.so/Group-Project-Box-Office-Analysis-20adb8fbd6cf804cb0b6d1bf27be4ef2) to manage our project timeline, assign tasks, and track contributions. This helped ensure smooth coordination across the team.
 
-## Business Problem
+## Business Objectives
 The new movie studio lacks experience in movie making and needs insights to:
 - Identify successful movie characteristics.
 - Pinpoint profitable genres.
@@ -28,7 +32,7 @@ The dataset used for this project combines information from multiple sources, ea
 ###  Data Sources and Datasets
 
 1. [Box Office Mojo](https://www.boxofficemojo.com/) 
-Provides comprehensive box office earnings, including (domestic and international) revenue data.
+Provides comprehensive box office earnings of other studios including (domestic and international) revenue data.
    - bom.movie_gross.csv.gz 
 
 2. [IMDB (Internet Movie Database)](https://www.imdb.com/) 
@@ -58,106 +62,83 @@ After performing an initial analysis, cleaning, and merging of data, we used the
 - `imdb.title.akas.csv.gz` & `imdb.title.principals.csv.gz` → Contains Movie Metadata like genre, runtimes, directors, actors, and producers for talent influence.
 
 
-### Data Preparation
+### Exploratory Data Analysis (EDA)
 
-We performed basic data cleaning using Python, including converting data types where necessary, removing missing values that could significantly impact our analysis, and identifying potential outliers. New columns were added based on the needs of the analysis or the outcomes we wanted. We also carried out exploratory analysis to understand data distributions and spot anomalies early in the process. 
+We performed basic data cleaning using Python, including converting data types where necessary, removing missing values that could significantly impact our analysis, and identifying potential outliers.
+New columns were added based on the needs of the analysis or the outcomes we wanted. We also carried out exploratory analysis to understand data distributions and spot anomalies early in the process. 
 To maximize the usefulness of the data, we merged datasets to enrich the information available allowing us to have a better understand of the business problem.
 
-## Exploratory Data Analysis (EDA)
+## Analysis Overview
+To address the business problem of helping a new movie studio with no prior movie making experience, we structured our analysis around these key pillars:
 
-### Financial Performance Metric
-We analyzed over a century’s worth of movie data to evaluate key financial performance variables:
-- production budget
-- domestic gross
-- worldwide gross
+### Financial Metric Performance
+- We analyzed financial data to understand what makes a movie financially successful. Using production budget, gross earnings, and calculated metrics like profit and Return on investment (ROI), we identified patterns in profitability across diffrent budget ranges and time periods. This helped us determine cost effective production strategies and the financial risks involved in different investment levels.
 
-After cleaning the dataset, we calculate key profitability metrics such as profit and Return on Investment (ROI), enabling us to assess how efficiently movies converted budget into revenue.
+- We also applied regression model to quantify the impact of Production budget on financial outcomes like Return on investment(ROI). 
 
-Key Insights:
-- Low to mid budget movies (under $50M) tend to have higher ROI, making them more profitable relative to cost and less financially risky.
-- High budget movies ($200M+), while capable of generating massive profits, show wide flactuations in returns, making them riskier investments for new studios.
-- The $50M–$200M budget range appears to be a strategic sweet spot, balancing strong profit potential with manageable risk.
-
-We also found out that domestic success is a strong predictor of international earnings, but a few movies succeed internationally despite poor local performance highlighting the importance of understanding global markets.
-
-Historically, movie investments were most efficient during the 1930s–1970s with significantly higher average ROI than in more recent decades. While modern ROI has stabilized, this insight could  offer valuable inspiration remakes or modern adaptations of older high-return models could be worth exploring.
-
-By analyzing profit trends across budget brackets, ROI distribution over time, and the relationship between budget and returns, our work offers clear, data-backed guidance for investors and stakeholders. 
-
-This helps in shaping a cost-effective, market-aware production strategy aimed at long term  financial sustainability.
-
-![Return on Investment vs Production Budget](Images/Return%20on%20Investment(ROI)%20Vs%20Production%20Budget.png)
-
-![Profit Distribution by Budget Bracket](Images/Production%20Distribution%20by%20Budget%20Bracket.png)
-
-![Average ROI by Release Year](Images/Average%20ROI%20by%20Release%20Year.png)
+#### Market Landscape
+To understand the industry dynamics, we conducted a competitive analysis of global box office trends to identify the top studios and examine their revenue patterns over time.
 
 
-
-#### Regression Modelling
-
-To test whether production budget could reliably predict ROI, we applied a simple linear regression model. The results showed that budget alone has almost no predictive power (R² = 0.0069). 
-Production budgets don’t account for other crucial factors like marketing, distribution cuts, and backend deals. For more accurate forecasting, we’d need more dataset that reflects the full financial lifecycle of a movie. Simply spending more on production doesn’t guarantee higher returns. 
-
-![Forecasting ROI from Production Budgets](Images/Forecasting%20ROI%20from%20Production%20Budgets.png)
+#### Influence of Talent
+We also looked at the impact of directors, producers, and lead actors on movie performance. By linking cast and crew data with box office returns, we checked whether specific individuals consistently drive higher profitability or audience engagement. This aims to support informed hiring decisions for the studio.
 
 
-### competitive (market) analysis
-
-Our dataset contains various movie studios along with their domestic and international gross earnings. To calculate each studio’s total gross, we summed their domestic and international revenues. We then grouped the data by studio to compare overall earnings. The aim was to conduct a market analysis to identify leading studios based on global performance.
-
-![Top 10 Studios by Global Box Office](Images/Top%2010%20Studios%20by%20Global%20box%20office.png)
-
-We also analyzed global box office revenue trends over the years to better understand industry cycles. As the chart below shows, revenue does not increase consistently year over year, highlighting the volatile nature of the movie industry.
-
-This highlights the importance of:
-- Building a resilient business model
-- Timing market entry wisely
-- Developing risk mitigation strategies (e.g., genre diversification, leveraging streaming platforms like Netflix)
-
-![Global Box Office Revenue by Year](Images/Global%20box%20office%20Revenue%20by%20Year.png)
+#### Audience Preference
+We explored ratings, genre trends, and runtime distributions to better understand what types of content resonate most with audiences. By segmenting movies by genre, rating, and popularity metrics, we gained insight into audience preference. This enables the studio to tailor content to audience tastes while balancing creative goals and market viability.
 
 
-### Information about the Movies
+#### Basic Movie Meta data for Strategic Decision Making
+Finally, we considered general movie attributes such as release year, language, and runtime to identify seasonal trends, optimal movie lengths, and how content success has evolved over time. These are critical for shaping release strategies and production planning.
 
-We explored existing movie data to understand trends in genres, ratings, runtimes, and the influence of talent, to identify where the business could succeed.
+For a detailed breakdown of the analysis, please refer to the full notebook: ![Box_Office.ipynb](Final merged file.ipynb)
 
-- Drama is a dominant genre and blends well with others. For a new studio, focusing on Drama and Drama Hybrids (Drama-Romance, Drama-Comedy) could meet wide audience demand and offer storytelling flexibility
-
-- The industry leans heavily toward R and NR-rated movies:
-   - If the studio wants creative freedom, NR may be attractive. 
-   - If aiming for mainstream adult audiences, R-rated films are a safer bet.
-   - For family-friendly content, PG or PG-13 are ideal but more competitive.
-
-The studio should target making movies with runtime of 100–110 minutes because it aligns with current norms and audience attention spans. Longer runtimes tend to align with PG-13 and R-rated films, which dominate the market
-
-Certain directors and writers consistently produce more films, suggesting strong brand power and proven reliability. For a new studio, partnering with experienced talent could drive visibility and long-term success.
-
-![Common Movie Genres](Images/Most%20Common%20Movie%20Genres.png)
-![Distribution of Ratings](Images/Distribution%20of%20Rating.png)
-![Average Movie Runtime by Rating](Images/Average%20Movie%20Runtime%20by%20Rating.png)
-![Top Directors](Images/Top%20Movie%20Directors%20by%20the%20number%20of%20movies.png)  
-![Top Writers](Images/Top%20movie%20Writers%20by%20the%20number%20of%20movies.png)
+## Key Findings & Results
 
 
-### Understanding Audience Preference
-We also analyzed audience engagement (popularity) and viewer satisfaction (ratings) across genres and genre combinations. This helps inform content strategy by balancing what attracts viewers with what they enjoy.
-
-- To maximize reach and satisfaction, prioritize Fantasy and Animation. 
-- For strong audience pull, Action works, but quality control is crucial to avoid polarizing reviews.
+### TABLEAU ¬ PRESENTTATION LINK (PDF)
 
 
-We explored the trade-off between a movie’s popularity and how well it's received by audiences.
-- Movies with viewer ratings of 6+ tend to show higher popularity.
-- Action, Sci-Fi, and Adventure genres tend to be highly popular but polarizing, they draw large audiences, but reviews vary.
-- Drama, Animation, and Family genres have more balanced and consistent reception.
+### Observation
 
-For consistent critical success and family appeal, lean into Drama and Animation.
+1. Financial Metric Performance
+- Low to mid-budget films (under \$50M) tend to yield higher ROI and lower financial risk, while very high-budget movies (\$200M+) show highly variable returns.
+- Production budget alone has minimal predictive power for ROI, emphasizing the need to consider additional factors like marketing and talent.
+- The box office industry is volatile with no consistent yearly revenue growth.
+
+2. Market Landscape:
+- Leading studios demonstrate fluctuating revenue patterns, highlighting the importance of continuous market research and adaptability.
+
+3. Audience Preferences:
+- Genres such as Fantasy, Animation, and Drama consistently receive higher viewer satisfaction and stable box office performance.
+- Action and Sci-Fi are popular but come with more mixed reviews and higher variability.
+- Clear genre positioning and movie runtimes between 60 and 120 minutes are associated with better audience reception.
+- Release timing and seasonal trends play a crucial role in maximizing audience turnout and revenue.
+- Optimal runtimes align with industry norms (\~100–110 minutes), supporting audience preferences and market success.
 
 
-Genre blending can enhance both appeal and quality. Creating Adventure-Fantasy or Sci-Fi crossovers may yield high engagement and satisfaction. Pairing Action with Thriller ensures wide marketability.
+### Recomendation
 
-![Average Popularity by Genre](Images/Average%20Popularity%20by%20Genre.png)
-![Vote Average vs Genre Popularity](Images/Vote%20Average%20vs%20Genre%20Popularity.png)
-![Top 10 Genre Pairs by Audience Preference](Images/Top%2010%20Genre%20Pairs%20by%20Audience%20Preference.png). 
+- Production budget alone does not reliably predict financial success. The studio should diversify investment and allocate resources strategically, factoring in marketing, distribution, and talent costs to maximize ROI.
 
+- Prioritize collaboration with directors, producers, and lead actors who have consistently demonstrated positive impact on movie performance to improve profitability and audience engagement.
+ 
+- Tailoring movie content to align with our audience preferences, while balancing creativity, will enhance market reception and box office returns.
+
+- Understanding seasonal trends and optimal runtimes can improve audience turnout and overall performance.  Strategic scheduling of releases is recommended.
+ 
+- Continuous market research is essential to stay ahead in a rapidly evolving industry by actively tracking top studios’ revenue patterns helps identify emerging trends and potential market gaps.
+
+
+## Conclusion
+
+Our analysis provides a foundational understanding to guide the launch of a new movie studio. However, there are some limitations and challenges to consider:
+- The dataset does not capture the full financial cycle such as marketing budgets and revenue splits with theatres. These missing variables are critical for developing a comprehensive financial picture.
+- The rise of streaming platforms like Netflix, Amazon Prime, and Disney presents both challenges and opportunities, which are not fully reflected in the data. The new studio should explore hybrid release strategies to adapt to this evolving landscape.
+
+We encourage the stakeholders to expand their definition of success beyond traditional financial metrics like ROI and to include:
+- Audience ratings and critical reception
+- Streaming platform viewership,
+- Award nominations and wins, which contribute to prestige and long term brand value.
+
+While this analysis provides actionable insights into financial performance, talent influence, movie characteristics and strategic release planning of a movie, the studio’s ultimate success will rely on its ability to continuously adapt to industry shifts.
