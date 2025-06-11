@@ -1,2 +1,2 @@
-#Ignore all ziped files
+#Ignore all database files
 *.db
