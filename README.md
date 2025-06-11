@@ -103,6 +103,7 @@ We created an interactive Tableau dashboard to present the results of the analys
 
 ![Dashboard](Images/Dashboard%20Image.png)
 
+To access the presentation, refer to the link below:
 [View the Presentation](Presentation.pdf)
 
 
