@@ -98,9 +98,10 @@ For a detailed breakdown of the analysis, please refer to the full notebook: [Bo
 
 We created an interactive Tableau dashboard to present the results of the analysis in a clear and accessible way.
 
-[View the tableau Dashboard](https://public.tableau.com/app/profile/ryan.karimi1348/viz/Tableuaproject_17494898725590/Dashboard2?publish=yes)
 
+[View the tableau Dashboard](https://public.tableau.com/app/profile/ryan.karimi1348/viz/Tableuaproject_17494898725590/Dashboard1?publish=yes)
 
+[Dashboard](Box Office Blueprint Dashboard.pdf)
 
 [View the Presentation](Presentation.pdf)
 
