@@ -101,7 +101,7 @@ We created an interactive Tableau dashboard to present the results of the analys
 
 [View the tableau Dashboard](https://public.tableau.com/app/profile/ryan.karimi1348/viz/Tableuaproject_17494898725590/Dashboard1?publish=yes)
 
-[Dashboard](Box%20Office%20Blueprint%20Dashboard.pdf)
+![Dashboard](Images/Dashboard%20Image.png)
 
 [View the Presentation](Presentation.pdf)
 
